@@ -95,6 +95,108 @@ execute it.
 After I have finished executing these lines, 
 I will copy the command prompt over and comment it.
 
-Hello, Singh did something.
+Below is my command prompt activity.
+
+1. Make a readme.md file.
+```
+C:\Users\LAB\Desktop\2043_git_Practice>echo # 2043_2015_11_05_Practice >> README
+.md
+```
+Initilize the git folder.
+```
+C:\Users\LAB\Desktop\2043_git_Practice>git init
+Initialized empty Git repository in C:/Users/LAB/Desktop/2043_git_Practice/.git/
+```
+add my readme.md folder
+```
+C:\Users\LAB\Desktop\2043_git_Practice>git add README.md
+```
+C:\Users\LAB\Desktop\2043_git_Practice>git add .
+
+C:\Users\LAB\Desktop\2043_git_Practice>git commit -m "first commit"
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'LAB@STF126W-PC.(none)')
+
+C:\Users\LAB\Desktop\2043_git_Practice>git config user.name "Jeremy Evert"
+
+C:\Users\LAB\Desktop\2043_git_Practice>git config user.email "jeremy.evert@swosu
+.edu"
+
+C:\Users\LAB\Desktop\2043_git_Practice>git commit -m "first commit"
+[master (root-commit) c05d492] first commit
+ 2 files changed, 2 insertions(+)
+ create mode 100644 README.md
+ create mode 100644 Starting_Git_2043.md
+
+C:\Users\LAB\Desktop\2043_git_Practice>git remote add origin https://github.com/
+jeremy-evert/2043_2015_11_05_Practice.git
+
+C:\Users\LAB\Desktop\2043_git_Practice>git push -u origin master
+Username for 'https://github.com': jeremy.evert@swosu.edu
+Password for 'https://jeremy.evert@swosu.edu@github.com':
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 326 bytes | 0 bytes/s, done.
+Total 4 (delta 0), reused 0 (delta 0)
+To https://github.com/jeremy-evert/2043_2015_11_05_Practice.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+
+C:\Users\LAB\Desktop\2043_git_Practice>git commit
+On branch master
+Your branch is up-to-date with 'origin/master'.
+nothing to commit, working directory clean
+
+C:\Users\LAB\Desktop\2043_git_Practice>git add .
+
+C:\Users\LAB\Desktop\2043_git_Practice>git commit
+[master b5bd0ac] Added a line to my instruction
+ 1 file changed, 100 insertions(+), 1 deletion(-)
+ rewrite Starting_Git_2043.md (100%)
+
+C:\Users\LAB\Desktop\2043_git_Practice>git push
+warning: push.default is unset; its implicit value has changed in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the traditional behavior, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+Since Git 2.0, Git defaults to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+Username for 'https://github.com': jeremy.evert@swosu.edu
+Password for 'https://jeremy.evert@swosu.edu@github.com':
+Counting objects: 3, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.41 KiB | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/jeremy-evert/2043_2015_11_05_Practice.git
+   c05d492..b5bd0ac  master -> master
+
+C:\Users\LAB\Desktop\2043_git_Practice>
 
 
